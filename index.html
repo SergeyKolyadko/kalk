@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	  <![endif]-->
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 block">
+							<p>	Расчет стоимости заказа на нарезку стекла с учетом вида обработки.</p>
+			</div>
+			<div class="col-md-6 col-md-offset-3 block">
+				<table class="table kalk block">
+
+					<tr>
+						<td align="center" colspan="2" >
+							<h3>нарезка</h3>
+						</td>
+					</tr>
+					<tr>
+					
+						<td align="right">
+							<form class="form-inline">
+							  <div ><label >материал</label>
+									<select class="form-control" id="material"> 
+									  <option>-------</option>
+									  <option>зеркало 4 мм</option>
+									  <option>стекло 4 мм</option>
+									  <option>стекло 5 мм</option>
+									  <option>стекло 6 мм</option>
+									  <option>стекло 8 мм</option>
+									  <option>стекло 10 мм</option>
+									</select>						
+							  </div>
+							</form>
+							</form>
+						</td>
+						<td align="left">
+							<form class="form-inline">
+							  <div >
+								<label >количество, шт. </label>
+								<input type="text" class="form-control" id="mat_count">
+							  </div>
+							</form>
+						</td>
+					</tr>
+					
+					<tr>
+						<td align="right">
+							<form class="form-inline">
+							  <div >
+								<label >высота, мм </label>
+								<input type="text" class="form-control" id="element_height" placeholder="fghfgh">
+							  </div>
+							</form>
+						</td>
+						<td align="left">
+							<form class="form-inline">
+							  <div >
+								<label >ширина, мм </label>
+								<input type="text" class="form-control" id="element_width" placeholder="">
+							  </div>
+							</form>
+						</td>
+					</tr>
+					
+					<tr>
+						<td align="right">
+							<form class="form-inline">
+							  <div >
+								<label >коэф. на фигур. нарезку </label>
+								<input type="checkbox" id="" value="" style="vertical-align:middle"> 
+							  </div>
+							</form>
+						</td>
+						<td align="left">
+							<form class="form-inline">
+							  <div >
+								<label>материал заказчика  </label>
+								<input type="checkbox" id="" value="" style="vertical-align:middle"> 
+							  </div>
+							</form>
+						</td>
+					</tr>
+					
+					
+					<tr>
+						<td align="center" colspan="2" >
+							<button id="runButton" type="button" class="btn  btn-default" >РАСЧЕТ</button>
+						</td>
+					</tr>
+					<!-- --------------------- -->
+					
+<!-- 					<tr>
+						<td align="center" colspan="2" >
+							<h3>обработка: шлифовка, полировка</h3>
+						</td>
+					</tr>
+					<tr>
+					
+						<td align="right">
+							<form class="form-inline">
+							  <div >
+								<label >по всем сторонам </label>
+								<input type="checkbox" id="all_sides" value="" style="vertical-align:middle"> 
+							  </div>
+							</form>
+						</td>
+					
+						<td align="left">
+							<form class="form-inline">
+							  <div >
+									<select class="form-control" id="treatment_option">
+									  <option>- - - - - - -</option>
+									  <option>шлифовка, фигурная шлифовка</option>
+									  <option>шлифовка+полировка</option>
+									  <option>стекло 5 мм</option>
+									</select>						
+							  </div>
+							</form>
+						</td>
+					</tr>
+ -->					
+					
+				</table>
+			</div>
+
+		</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/kalk.js"></script>
+	<script>
+</script>
+</body>
+</html>
